@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube V Блокер",
+  "version": "1.0",
+  "description": "Блокирует кнопки V и М на YouTube",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.youtube.com/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "icons": {
+    "16": "noV16.png",
+    "48": "noV48.png",
+    "128": "noV128.png"
+  }
+}
